@@ -1,0 +1,138 @@
+html, body, div, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(221, 191, 90);
+}
+
+h1 {
+    padding: 10px;
+    margin-top: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgb(240, 16, 91);
+    text-align: center;
+    background-image: url("./diego-ph-fIq0tET6llw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /*Usado para centralizar a imagem, podemos mudar as posições center top e por ai vai*/
+}
+
+p {
+    font-size: 14 px;
+}
+
+a img {
+    height: 60px;
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    margin-top: 20px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+
+.navbar ul>li{
+    display: inline-flex;
+    flex-direction: row;
+    padding: 10px;
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: rgb(242, 232, 120);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.navbar img{
+    display: flex;
+    justify-content: left;
+    height: 50px;
+}
+
+.navbar #logo:hover{
+    transition: background-color 300ms ease-in-out;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 20%;
+}
+/* Links inside the navbar */
+.navbar ul li a {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: #f89d25;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #faf9f8;
+    transition: background-color 300ms ease-in-out;
+    color: rgba(0, 0, 0, 0.637);
+    padding: 5px;
+    border-radius: 20%;
+}
+
+div.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    margin: 5px;
+}
+
+
+footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    color: #f89d25;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+img.imagens {
+    width: 400px;
+    height: 400px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 100% / 3;
+    padding: 5px;
+}
